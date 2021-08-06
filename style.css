@@ -1,0 +1,134 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9fafc;
+    margin: 0;
+}
+
+#pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header ul {
+    margin-left: -34px;
+    line-height: 2em;
+    font-size: 85%;
+}
+
+button {
+    background-color: #000;
+    border-radius: 12px;
+    height: 2em;
+    width: 100vw;
+    max-width: 768px;
+}
+
+button a {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    width: 100%;
+    padding-left: 10px;
+    flex: 1;
+}
+
+main p {
+    border-left: solid lightgray 3px;
+    padding-left: 6px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: rgba(247, 193, 162, 0.7);
+    align-items: center;
+    padding: 8px;
+    height: 1.5rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: reverse;
+}
+
+footer ul li {
+    padding: 0 8px;
+    font-size: 85%;
+    color: #69696a;
+}
+
+#chirpus {
+    font-weight: bold;
+    text-transform: lowercase;
+    color: black;
+}
+
+@media only screen and (min-width:768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5px;
+    }
+    nav li {
+        display: inline;
+        padding: 0 5px;
+    }
+    header button {
+        width: 4rem;
+        height: 1 rem;
+    }
+    main {
+        position: relative;
+        width: 50%;
+    }
+    main>#bigCircle {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: rgba(247, 136, 167, 0.6);
+        position: absolute;
+        top: 80px;
+        left: 850px;
+    }
+    main>#mediumCircle {
+        height: 205px;
+        width: 205px;
+        border-radius: 50%;
+        background-color: rgba(247, 193, 162, 0.7);
+        position: absolute;
+        top: 245px;
+        left: 1025px;
+    }
+    main>#smallCircle {
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        background-color: rgba(207, 130, 213, 0.6);
+        position: absolute;
+        top: 150px;
+        left: 1100px;
+    }
+}
